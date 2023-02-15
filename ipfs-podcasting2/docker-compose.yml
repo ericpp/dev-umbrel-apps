@@ -10,6 +10,8 @@ services:
     image: ericpp/ipfspodcastnode
     depends_on:
       - ipfs
+    environment:
+      IPFS_RPC_URL: "http://ipfs-podcasting2_ipfs_1:5001"
     restart: on-failure
     user: "1000:1000"
     volumes:
