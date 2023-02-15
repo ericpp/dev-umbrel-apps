@@ -19,7 +19,6 @@ services:
     image: ipfs/kubo
     ports:
       - $APP_IPFS_PODCASTING_P2P_PORT:$APP_IPFS_PODCASTING_P2P_PORT # IPFS
-      - $APP_IPFS_PODCASTING_GATEWAY_PORT:$APP_IPFS_PODCASTING_GATEWAY_PORT # HTTP Gateway
     restart: on-failure
     user: "1000:1000"
     volumes:
